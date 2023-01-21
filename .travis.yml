@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t DRP -f Dockerfile.dev .
+  - docker build -t chirag4904/doker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true DRP npm run test
+  - docker run -e CI=true chirag4904/doker-react npm run test
